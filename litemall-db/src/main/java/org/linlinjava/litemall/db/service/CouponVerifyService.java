@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * @author 魔舞清华
+ */
 @Service
 public class CouponVerifyService {
 
@@ -43,6 +46,7 @@ public class CouponVerifyService {
         }
         else if(timeType.equals(CouponConstant.TIME_TYPE_DAYS)) {
             LocalDateTime expired = couponUser.getAddTime().plusDays(days);
+
             if (now.isAfter(expired)) {
                 return null;
             }

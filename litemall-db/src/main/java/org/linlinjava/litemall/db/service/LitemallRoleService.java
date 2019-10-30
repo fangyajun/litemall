@@ -13,10 +13,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author 魔舞清华
+ */
 @Service
 public class LitemallRoleService {
     @Resource
     private LitemallRoleMapper roleMapper;
+
 
 
     public Set<String> queryByIds(Integer[] roleIds) {

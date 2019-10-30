@@ -100,7 +100,8 @@ class SystemInistService {
 
         // 微信相关信息
         infos.put(SystemInfoPrinter.CREATE_PART_COPPER + 2, "微信相关");
-        infos.put("微信APP KEY", environment.getProperty("litemall.wx.app-id"));
+        infos.put("" +
+                "微信APP KEY", environment.getProperty("litemall.wx.app-id"));
         infos.put("微信APP-SECRET", environment.getProperty("litemall.wx.app-secret"));
         infos.put("微信支付MCH-ID", environment.getProperty("litemall.wx.mch-id"));
         infos.put("微信支付MCH-KEY", environment.getProperty("litemall.wx.mch-key"));

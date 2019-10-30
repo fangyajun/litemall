@@ -46,9 +46,6 @@ public class AdminAuthController {
     @Autowired
     private LogHelper logHelper;
 
-    /*
-     *  { username : value, password : value }
-     */
     @PostMapping("/login")
     public Object login(@RequestBody String body, HttpServletRequest request) {
         String username = JacksonUtil.parseString(body, "username");
@@ -92,9 +89,6 @@ public class AdminAuthController {
         return ResponseUtil.ok(result);
     }
 
-    /*
-     *
-     */
     @RequiresAuthentication
     @PostMapping("/logout")
     public Object logout() {
@@ -151,8 +145,6 @@ public class AdminAuthController {
                 apis.clear();
                 apis.add("*");
                 return apis;
-                //                return systemPermissionsMap.values();
-
             }
         }
         return apis;

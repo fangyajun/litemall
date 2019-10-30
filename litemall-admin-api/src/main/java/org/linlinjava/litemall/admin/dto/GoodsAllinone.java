@@ -43,4 +43,5 @@ public class GoodsAllinone {
         this.attributes = attributes;
     }
 
+
 }
